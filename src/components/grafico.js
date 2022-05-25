@@ -97,7 +97,7 @@ const Grafico = () => {
                     <div className="col-md-4">
                         <label className="px-2">Categoria: </label>
                         <select name="categoria" onChange={handleChange}>
-                            <option selected value="0">--seleccione--</option>
+                            <option value="0">--seleccione--</option>
                             {categoria.map((i) => {
                                 return (<option value={i.id}>{i.name}</option>)
                             })}
@@ -107,7 +107,7 @@ const Grafico = () => {
                     <div className="col-md-4">
                         <label className="px-2">Producto: </label>
                         <select name="producto" onChange={handleChange} aria-label=".form-select-sm example">
-                            <option selected value="0">--seleccione--</option>
+                            <option value="0">--seleccione--</option>
                             {producto.map((i) => {
                                 return (<option value={i.id}>{i.name}</option>)
                             })}
@@ -116,7 +116,7 @@ const Grafico = () => {
                     <div class="col-md-4" hidden={!showMarca}>
                         <label className="px-2">Marca: </label>
                         <select name="marca" onChange={handleChange} aria-label=".form-select-sm example">
-                            <option selected>--seleccione--</option>
+                            <option value="0">--seleccione--</option>
                             {marca.map((i) => {
                                 return (<option value={i.id}>{i.name}</option>)
                             })}
